@@ -19,8 +19,6 @@ test.describe("Tests for Sinoptik UA", () => {
     testData.days = await dateHelpers.getDaysArray(10);
   });
 
-  test.afterAll(async () => {});
-
   test("01 - Test for Sinoptik UA", async ({ page }) => {
     await test.step("Step 1 - Open main page", async () => {
       await page.goto(testData.url);
